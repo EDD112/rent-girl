@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ava's Profile</title>
+    <link rel="stylesheet" href="rental.css">
+    <link rel="icon" type="image/png" href="logo1.png">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="rental.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="Girls.html" class="return-button">RETURN</a>
+
+    <section class="profile">
+        <h1>Ava</h1>
+        <img src="Ava.png" alt="Ava">
+
+        <div class="navigation-buttons">
+            <a href="Isabella.html" class="nav-button">Previous</a>
+            <a href="Lily.html" class="nav-button">Next</a>
+        </div>
+
+        <section class="rental-plans">
+            <h2>Rental Plans</h2>
+            <div class="plan">
+                <h3>Basic (1-day): $99</h3>
+                <ul>
+                    <li>1-hour date</li>
+                    <li>Limited activities (e.g., coffee, walk)</li>
+                </ul>
+            </div>
+            <div class="plan">
+                <h3>Premium (1-week): $499</h3>
+                <ul>
+                    <li>5-hour dates</li>
+                    <li>Various activities (e.g., dinner, movie, outing)</li>
+                </ul>
+            </div>
+            <div class="plan">
+                <h3>Elite (1-month): $1,999</h3>
+                <ul>
+                    <li>Unlimited dates</li>
+                    <li>Customized activities and gifts</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="booking-process">
+            <h2>Book Your Girlfriend</h2>
+            <form>
+                <label for="rental-plan">Select Rental Plan:</label>
+                <select id="rental-plan">
+                    <option value="basic">Basic (1-day): $99</option>
+                    <option value="premium">Premium (1-week): $499</option>
+                    <option value="elite">Elite (1-month): $1,999</option>
+                </select>
+
+                <label for="girlfriend">Girlfriend:</label>
+                <select id="girlfriend">
+                    <option value="Ava">Ava</option>
+                </select>
+
+                <label for="phone-number">Phone Number:</label>
+                <input type="tel" id="phone-number" placeholder="Enter your phone number" required>
+
+                <label for="date-time">Set Date and Time:</label>
+                <input type="datetime-local" id="date-time" required>
+
+                <button type="submit" class="rent-button">Proceed Renting</button>
+            </form>
+        </section>
+    </section>
+</body>
+</html>
